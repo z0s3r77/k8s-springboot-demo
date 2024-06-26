@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: springboot-demo
+  namespace: entorno-dev
+  labels:
+    app: springboot-demo
+spec:
+  containers:
+    - name: springboot-demo-container
+      image: z0s3r77/springboot-example:latest
+      imagePullPolicy: Always
+      ports:
+        - containerPort: 8080
