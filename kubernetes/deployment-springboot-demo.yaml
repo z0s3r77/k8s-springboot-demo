@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: springboot-demo-container
-          image: z0s3r77/springboot-example:latest
+          image: z0s3r77/springboot-example:v1
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
