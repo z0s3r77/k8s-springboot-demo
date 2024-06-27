@@ -6,7 +6,7 @@ metadata:
   labels:
     app: springboot-demo
 spec:
-  replicas: 3  # Número de réplicas deseadas
+  replicas: 3
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: springboot-demo-container
-          image: z0s3r77/springboot-example:v1
+          image: z0s3r77/springboot-example:v2
           imagePullPolicy: Always
           ports:
             - containerPort: 8080

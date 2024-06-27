@@ -7,3 +7,10 @@
 ```
 sudo snap install kubectx --classic
 ```
+
+## Versiones
+
+v1 : Disponibles endpoints /api/test/sebas, /api/sebas
+
+v2 : Se quita el endpoint /api/test/sebas (deprecated)
+

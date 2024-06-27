@@ -14,9 +14,5 @@ public class GreetingsController {
         return "Saludos " + name + "!";
     }
 
-    @GetMapping(value = "/test/{name}", produces = "application/json")
-    public String testEndpoint(@PathVariable String name){
-        return "Saludos desde un test " + name;
-    }
 
 }
