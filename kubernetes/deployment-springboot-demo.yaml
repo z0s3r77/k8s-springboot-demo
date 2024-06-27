@@ -20,12 +20,22 @@ spec:
       labels:
         app: springboot-demo
     spec:
+      initContainers:
+        - name: init-file
+          image: busybox
+          command: [ 'sh', '-c', 'echo "Contenido incial del archivo test.txt en otro contenedor" > /mnt/data/test.txt' ]
+          volumeMounts:
+            - mountPath: "/mnt/data"
+              name: data-volume
       containers:
         - name: springboot-demo-container
-          image: z0s3r77/springboot-example:v2
+          image: z0s3r77/springboot-example:v3
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
+          volumeMounts:
+            - mountPath: "/mnt/data"
+              name: data-volume
           readinessProbe:
             httpGet:
               path: /actuator/health
@@ -38,3 +48,7 @@ spec:
               port: 8080
             initialDelaySeconds: 30
             periodSeconds: 10
+      volumes:
+        - name: data-volume
+          persistentVolumeClaim:
+            claimName: data-pvc

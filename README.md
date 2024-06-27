@@ -14,3 +14,4 @@ v1 : Disponibles endpoints /api/test/sebas, /api/sebas
 
 v2 : Se quita el endpoint /api/test/sebas (deprecated)
 
+v3: Se añade el endpoint /api/test/read-file
