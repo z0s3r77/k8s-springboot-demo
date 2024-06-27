@@ -10,3 +10,4 @@ spec:
     - protocol: TCP
       port: 8080  # Puerto expuesto por el Service
       targetPort: 8080  # Puerto en el contenedor
+  type: NodePort
