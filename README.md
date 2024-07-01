@@ -43,6 +43,11 @@ también nos agrega la herramienta kubens, que nos da la posibilidad de ver el n
 ```
 sudo snap install kubectx --classic
 ```
+Cuando se instale podremos acceder a: 
+```
+kubectx     # Para ver el entorno/cluster en el que estamos trabajando
+kubens      # Para ver el namespace en el que nos encontramos
+```
 
 ## Guia
 
