@@ -29,7 +29,7 @@ spec:
               name: data-volume
       containers:
         - name: springboot-demo-container
-          image: z0s3r77/springboot-example:v3
+          image: z0s3r77/springboot-example:v2
           imagePullPolicy: Always
           ports:
             - containerPort: 8080

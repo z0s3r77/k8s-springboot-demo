@@ -27,4 +27,11 @@ public class GreetingsController {
         return Files.lines(Paths.get(FILE_PATH)).collect(Collectors.joining("\n"));
     }
 
+    /*
+    @GetMapping("/test/new-endpoint")
+    public String newEndpoint() {
+        return "Kubernetes es lo más";
+    }
+    */
+
 }
