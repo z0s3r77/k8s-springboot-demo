@@ -28,7 +28,7 @@ Service https://kubernetes.io/es/docs/concepts/services-networking/service/
 Ingress / Regla Ingress https://kubernetes.io/docs/concepts/services-networking/ingress/
 
 
-![arquitectura_k8s.drawio.png](imagenes/arquitectura_k8s.drawio.png)
+![arquitectura-k8s.png](imagenes/arquitectura-k8s.png)
 
 
 ## Comandos de ayuda
